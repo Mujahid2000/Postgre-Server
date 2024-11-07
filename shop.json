@@ -1,0 +1,248 @@
+[
+    {
+      "shopId": 1,
+      "shopName": "Tech Solutions",
+      "rating": 4.5,
+      "shopPicture": "https://i.ibb.co/cgFd8FP/h1.jpg"
+    },
+    {
+      "shopId": 2,
+      "shopName": "Kitchen Marvel",
+      "rating": 4.2,
+      "shopPicture": "https://i.ibb.co/d0LMSBs/h2.jpg"
+    },
+    {
+      "shopId": 3,
+      "shopName": "Smart Living",
+      "rating": 3.8,
+      "shopPicture": "https://i.ibb.co/zQP0GQN/10866488-19168739.jpg"
+    },
+    {
+      "shopId": 4,
+      "shopName": "Chic Cosmetics",
+      "rating": 4.0,
+      "shopPicture": "https://i.ibb.co/BLbMsq3/b1.jpg"
+    },
+    {
+      "shopId": 5,
+      "shopName": "Serene Skincare",
+      "rating": 4.6,
+      "shopPicture": "https://i.ibb.co/fDD9jQq/b2.jpg"
+    },
+    {
+      "shopId": 6,
+      "shopName": "Gentle Glow Cosmetics",
+      "rating": 4.1,
+      "shopPicture": "https://i.ibb.co/0rYm8WZ/b3.jpg"
+    },
+    {
+      "shopId": 7,
+      "shopName": "Luxe Perfumery",
+      "rating": 4.3,
+      "shopPicture": "https://i.ibb.co/x1ZHg6R/b4.jpg"
+    },
+    {
+      "shopId": 8,
+      "shopName": "Delicious Delights",
+      "rating": 4.7,
+      "shopPicture": "https://i.ibb.co/rm714d3/8405357.jpg"
+    },
+    {
+      "shopId": 9,
+      "shopName": "Culinary Creations",
+      "rating": 4.2,
+      "shopPicture": "https://i.ibb.co/9scnxfM/8948758.jpg"
+    },
+    {
+      "shopId": 10,
+      "shopName": "Savor the Spice",
+      "rating": 3.9,
+      "shopPicture": "https://i.ibb.co/yWjhmr1/17779659-5900401.jpg"
+    },
+    {
+      "shopId": 11,
+      "shopName": "Sweets Paradise",
+      "rating": 4.5,
+      "shopPicture": "https://i.ibb.co/ccz0CW9/21742162-6503590.jpg"
+    },
+    {
+      "shopId": 12,
+      "shopName": "Modern Living",
+      "rating": 4.0,
+      "shopPicture": "https://i.ibb.co/WDMKQVx/furniture3.jpg"
+    },
+    {
+      "shopId": 13,
+      "shopName": "Urban Designs",
+      "rating": 4.4,
+      "shopPicture": "https://i.ibb.co/gvpKJDv/furniture2.png"
+    },
+    {
+      "shopId": 14,
+      "shopName": "Rustic Charm",
+      "rating": 4.2,
+      "shopPicture": "https://i.ibb.co/y8sBmSk/furniture4.jpg"
+    },
+    {
+      "shopId": 15,
+      "shopName": "Sleek Interiors",
+      "rating": 4.3,
+      "shopPicture": "https://i.ibb.co/MZXsQ0q/furniture1.jpg"
+    },
+    {
+      "shopId": 16,
+      "shopName": "Vintage Finds",
+      "rating": 4.1,
+      "shopPicture": "https://i.ibb.co/kxzB3K7/furniture7.jpg"
+    },
+    {
+      "shopId": 17,
+      "shopName": "Timeless Classics",
+      "rating": 3.8,
+      "shopPicture": "https://i.ibb.co/tXDzmbL/furniture5.jpg"
+    },
+    {
+      "shopId": 18,
+      "shopName": "Eclectic Designs",
+      "rating": 4.2,
+      "shopPicture": "https://i.ibb.co/FHYdWnH/furniture6.jpg"
+    },
+    {
+      "shopId": 19,
+      "shopName": "Sound Haven",
+      "rating": 4.5,
+      "shopPicture": "https://i.ibb.co/q0JJ2q3/17761693-5823298.jpg"
+    },
+    {
+      "shopId": 20,
+      "shopName": "Sonic Waves",
+      "rating": 4.7,
+      "shopPicture": "https://i.ibb.co/s69mBsY/music-3.jpg"
+    },
+    {
+      "shopId": 21,
+      "shopName": "Elite Audio",
+      "rating": 4.3,
+      "shopPicture": "https://i.ibb.co/d75q0g4/music.jpg"
+    },
+    {
+      "shopId": 22,
+      "shopName": "Dynamic Sounds",
+      "rating": 4.2,
+      "shopPicture": "https://i.ibb.co/0Gt3yfS/music2.jpg"
+    },
+    {
+      "shopId": 23,
+      "shopName": "Gaming Beats",
+      "rating": 4.6,
+      "shopPicture": "https://i.ibb.co/xJyypRT/music4.jpg"
+    },
+    {
+      "shopId": 24,
+      "shopName": "Toy Kingdom",
+      "rating": 4.0,
+      "shopPicture": "https://i.ibb.co/YBhy4wf/toy5.jpg"
+    },
+    {
+      "shopId": 25,
+      "shopName": "Tiny Treasures",
+      "rating": 4.1,
+      "shopPicture": "https://i.ibb.co/D9kwgm2/toy4.jpg"
+    },
+    {
+      "shopId": 26,
+      "shopName": "Town Toys",
+      "rating": 4.4,
+      "shopPicture": "https://i.ibb.co/GkMqL9Q/toy3.jpg"
+    },
+    {
+      "shopId": 27,
+      "shopName": "Outdoor Explorers",
+      "rating": 4.4,
+      "shopPicture": "https://i.ibb.co/YBhy4wf/toy5.jpg"
+    },
+    {
+      "shopId": 28,
+      "shopName": "Urban Elegance",
+      "rating": 4.5,
+      "shopPicture": "https://i.ibb.co/NCz7xy6/mens4.jpg"
+    },
+    {
+      "shopId": 29,
+      "shopName": "Sporty Edge",
+      "rating": 4.2,
+      "shopPicture": "https://i.ibb.co/L19nBYX/mens3.jpg"
+    },
+    {
+      "shopId": 30,
+      "shopName": "Dapper Details",
+      "rating": 4.6,
+      "shopPicture": "https://i.ibb.co/K2Rc6Sr/mens2.jpg"
+    },
+    {
+      "shopId": 31,
+      "shopName": "Street Smart",
+      "rating": 4.4,
+      "shopPicture": "https://i.ibb.co/nBfDqZX/mens1.jpg"
+    },
+    {
+      "shopId": 32,
+      "shopName": "Modern Explorer",
+      "rating": 4.3,
+      "shopPicture": "https://i.ibb.co/xh3wFZN/9778354.jpg"
+    },
+    {
+      "shopId": 33,
+      "shopName": "Chic Elegance",
+      "rating": 4.5,
+      "shopPicture": "https://i.ibb.co/QjvTkHr/women5.jpg"
+    },
+    {
+      "shopId": 34,
+      "shopName": "Glamour Galore",
+      "rating": 4.5,
+      "shopPicture": "https://i.ibb.co/cD038jF/women4.jpg"
+    },
+    {
+      "shopId": 35,
+      "shopName": "Elegant Essentials",
+      "rating": 4.4,
+      "shopPicture": "https://i.ibb.co/0nC9m8q/women3.jpg"
+    },
+    {
+      "shopId": 36,
+      "shopName": "Best Beauty",
+      "rating": 4.3,
+      "shopPicture": "https://i.ibb.co/g9jbK4b/women2.jpg"
+    },
+    {
+      "shopId": 37,
+      "shopName": "Street Style",
+      "rating": 4.7,
+      "shopPicture": "https://i.ibb.co/f8BtkzX/women1.jpg"
+    },
+    {
+      "shopId": 38,
+      "shopName": "Tech Haven",
+      "rating": 4.2,
+      "shopPicture": "https://i.ibb.co/Jxhrmr6/10279844.jpg"
+    },
+    {
+      "shopId": 39,
+      "shopName": "Mobile Mart",
+      "rating": 4.3,
+      "shopPicture": "https://i.ibb.co/ts9j42Z/11754425-4814647.jpg"
+    },
+    {
+      "shopId": 40,
+      "shopName": "Mobile World",
+      "rating": 4.5,
+      "shopPicture": "https://i.ibb.co/cYMQ2cY/17538806-5861319.jpg"
+    },
+    {
+      "shopId": 41,
+      "shopName": "Mobile Express",
+      "rating": 4.6,
+      "shopPicture": "https://i.ibb.co/8KdsfKs/23404754-6734349.jpg"
+    }
+  ]
