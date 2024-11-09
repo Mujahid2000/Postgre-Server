@@ -1,4 +1,4 @@
-CREATE DATABASE HomeDecor;
+CREATE DATABASE e_commerce;
 
 CREATE TABLE product_Data (
   id VARCHAR(255) PRIMARY KEY,
