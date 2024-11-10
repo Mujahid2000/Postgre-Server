@@ -135,7 +135,7 @@ router.delete("/:id", async (req, res) => {
       [id]
     );
     res.status(200).json({
-      message: "Resource with id ${req.params.id} deleted",
+      message: "Resource with id deleted",
       delete: deleteSingleData.rows,
     });
   } catch (error) {

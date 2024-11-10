@@ -1,17 +1,18 @@
 CREATE DATABASE e_commerce;
 
 CREATE TABLE product_Data (
+  idP int serial
   id VARCHAR(255) PRIMARY KEY,
   category VARCHAR(255),
   color VARCHAR(255),
   shopName VARCHAR(255),
-  shopPicture VARCHAR(255),
+  shoppicture VARCHAR(255),
   description VARCHAR(255),
   stock VARCHAR(20),
   product_image VARCHAR(255),
-  productName VARCHAR(255),
+  productname VARCHAR(255),
   price numeric (10,2),
-  rating numeric(1,1)
+  rating numeric(2,1)
 );
 
 
@@ -63,3 +64,7 @@ CREATE TABLE order_Data (
   user_id integer,
   FOREIGN KEY (user_id) REFERENCES user_data(user_id)
 );
+
+
+INSERT INTO product_Data (id, category, color, shopName, shopPicture, description, stock, product_image, productName, price, rating)
+VALUES ('5f33f692-d9de-4959-bff9-d71f39d22079', 'Men Fashion', '#3498db', 'Tech Solutions', 'https://i.ibb.co/cgFd8FP/h1.jpg', 'A stylish fashion item.', 'In Stocl', 'product_image.jpg', 'Cool Shirt', 19.99, 4.5);
