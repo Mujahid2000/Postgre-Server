@@ -1,7 +1,7 @@
 CREATE DATABASE e_commerce;
 
 CREATE TABLE product_Data (
-  idP int serial
+  idP int serial 
   id VARCHAR(255) PRIMARY KEY,
   category VARCHAR(255),
   color VARCHAR(255),
@@ -51,18 +51,16 @@ WHERE id = id;
 SELECT p.id, p.productname, p.price, p.category, p.product_image  FROM product_data p INNER JOIN cart_data c ON p.idP = c.productId WHERE email ='mujahid2@gmail.com'
 
 
-CREATE TABLE order_Data (
-  id VARCHAR(255) PRIMARY KEY,
-  category VARCHAR(255),
-  color VARCHAR(255),
-  shopName VARCHAR(255),
-  product_image VARCHAR(255),
-  productName VARCHAR(255),
-  price numeric(10,2),
-  total_price numeric(10,2),
-  email VARCHAR(255),
-  user_id integer,
-  FOREIGN KEY (user_id) REFERENCES user_data(user_id)
+CREATE TABLE order_data (
+    id VARCHAR(255) PRIMARY KEY,
+    email VARCHAR(255) NOT NULL,
+    total_price NUMERIC(10, 2) NOT NULL,
+    delivery_charge NUMERIC(10, 2) NOT NULL,
+    user_id int NOT NULL,
+    cart JSON, 
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (user_id) REFERENCES user_data(user_id)
+
 );
 
 
