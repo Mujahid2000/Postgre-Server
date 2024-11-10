@@ -127,26 +127,24 @@ router.put("/:id", async (req, res) => {
 
 
 router.delete("/", async (req, res) => {
-  // const id = req.params.id;
-  // Delete a resource by ID
-  const {ids} = req.body;
-  if(!Array.isArray(ids) || ids.length === 0){
-    return res.status(400).json({message: 'No ids provided'})
+  const { ids } = req.body; // Expecting an array of IDs in the request body
+
+  if (!Array.isArray(ids) || ids.length === 0) {
+    return res.status(400).json({ message: "No IDs provided" });
   }
+
   try {
-    const deleteQuery = 'DELETE FROM product_data WHERE id = ANY($1::uuid[]) RETURNING *'
-    const result = await pool.query(
-      deleteQuery,
-      [id]
-    );
+    const deleteQuery = "DELETE FROM product_Data WHERE id = ANY($1::uuid[]) RETURNING *";
+    const result = await pool.query(deleteQuery, [ids]);
     res.status(200).json({
-      message: "Resource with id deleted",
+      message: "Resources deleted successfully",
       deletedItems: result.rows,
     });
   } catch (error) {
-    console.error("Error fetch data:", error);
-    res.status(500).json({ message: "Error fetch data" });
+    console.error("Error deleting data:", error);
+    res.status(500).json({ message: "Error deleting data" });
   }
 });
+
 
 module.exports = router;
