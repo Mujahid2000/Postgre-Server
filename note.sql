@@ -66,3 +66,7 @@ CREATE TABLE order_data (
 
 INSERT INTO product_Data (id, category, color, shopName, shopPicture, description, stock, product_image, productName, price, rating)
 VALUES ('5f33f692-d9de-4959-bff9-d71f39d22079', 'Men Fashion', '#3498db', 'Tech Solutions', 'https://i.ibb.co/cgFd8FP/h1.jpg', 'A stylish fashion item.', 'In Stocl', 'product_image.jpg', 'Cool Shirt', 19.99, 4.5);
+
+
+DELETE FROM product_data WHERE id IN ( '59305a97-c71d-4a74-9a54-952333bd7378',
+  '9657d24c-f183-4ee3-82e2-de9d9f39cd40')

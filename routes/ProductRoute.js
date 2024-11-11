@@ -127,24 +127,34 @@ router.put("/:id", async (req, res) => {
 
 
 router.delete("/", async (req, res) => {
-  const { ids } = req.body; // Expecting an array of IDs in the request body
+  const { ids } = req.body; 
 
+
+  // Check if the array is provided and has elements
   if (!Array.isArray(ids) || ids.length === 0) {
     return res.status(400).json({ message: "No IDs provided" });
   }
 
   try {
-    const deleteQuery = "DELETE FROM product_Data WHERE id = ANY($1::uuid[]) RETURNING *";
-    const result = await pool.query(deleteQuery, [ids]);
+    
+    const query = {
+      text: "DELETE FROM product_data WHERE id = ANY($1)",
+      values: [ids],
+    };
+  
+    const data = await pool.query(query);
+    
+
     res.status(200).json({
       message: "Resources deleted successfully",
-      deletedItems: result.rows,
+      deletedItems: data.rows, // Respond with deleted items if needed
     });
   } catch (error) {
     console.error("Error deleting data:", error);
     res.status(500).json({ message: "Error deleting data" });
   }
 });
+
 
 
 module.exports = router;
