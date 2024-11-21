@@ -32,7 +32,7 @@ router.get("/:id", async (req, res) => {
   const id = req.params.id;
   try {
     getDis_data = await pool.query(
-      "SELECT p.id, p.category, p.color, d.discountPrice, p.shopname, p.shoppicture, p.description, p.stock, p.product_image, p.productname, p.price, p.rating FROM product_data p INNER JOIN discount_product d ON d.discountid = p.idp WHERE p.id = $1",[id]
+      "SELECT p.id, p.category, p.color, d.discountprice, p.shopname, p.shoppicture, p.description, p.stock, p.product_image, p.productname, p.price, p.rating FROM product_data p INNER JOIN discount_product d ON d.discountid = p.idp WHERE p.id = $1",[id]
     );
     res.status(200).json({ message: "All resources", data: getDis_data.rows });
   } catch (error) {}
