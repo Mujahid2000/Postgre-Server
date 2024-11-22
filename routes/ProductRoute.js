@@ -32,7 +32,7 @@ router.post("/", async (req, res) => {
         shoppicture,
         description,
         stock,
-        product_image,
+        JSON.stringify(product_image),
         productname,
         price,
         rating,
