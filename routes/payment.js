@@ -46,8 +46,8 @@ router.post('/', async (req, res) => {
         payment_method_types: ["card"],
         mode: "payment",
         line_items: lineItems,
-        success_url: 'https://bazar-bd.vercel.app/dashboard/success',
-        cancel_url: `https://bazar-bd.vercel.app/dashboard/payment/cancel`,
+        success_url: 'http://localhost:5173/dashboard/success',
+        cancel_url: `http://localhost:5173/dashboard/payment/cancel`,
       });
   
       res.status(200).json({ url: session.url });
