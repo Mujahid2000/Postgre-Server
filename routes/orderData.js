@@ -5,7 +5,6 @@ const { v4: uuidv4 } = require("uuid");
 
 router.post('/', async (req, res) => {
   const { cart, email, totalPrice, deliveryCharge, userId } = req.body;
-  console.log(cart);
   const id = uuidv4(); // Generate a unique ID for the order
   try {
     // Inserting data into `order_data` table
