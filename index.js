@@ -22,6 +22,7 @@ app.post('/jwt', async (req, res) => {
     const user = req.body;
     const token = jwt.sign(user, process.env.ACCESS_TOKEN_SECRET, { expiresIn: '5h' });
     res.send({ token });
+   
   } catch (error) {
     console.log('Error generating token:', error);
     res.status(500).send({ error: true, message: 'Error generating token', error });
