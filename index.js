@@ -8,7 +8,13 @@ const jwt = require('jsonwebtoken');
 const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
 
 // Middleware
-app.use(cors());
+app.use(
+  cors({
+    origin: ["https://bazar-bd.vercel.app/"], // আপনার ক্লায়েন্টের URL
+    methods: ["GET", "POST"],
+    credentials: true,
+  })
+);
 app.use(express.json());
 app.use(bodyParser.json());
 
@@ -22,7 +28,7 @@ app.post('/jwt', async (req, res) => {
     const user = req.body;
     const token = jwt.sign(user, process.env.ACCESS_TOKEN_SECRET, { expiresIn: '5h' });
     res.send({ token });
-   
+   console.log('res token',token);
   } catch (error) {
     console.log('Error generating token:', error);
     res.status(500).send({ error: true, message: 'Error generating token', error });
@@ -32,7 +38,7 @@ app.post('/jwt', async (req, res) => {
 // Token Verification Middleware
 const verifyToken = (req, res, next) => {
   const authHeader = req.headers.authorization;
-  
+  console.log('B token',authHeader);
   if (!authHeader || !authHeader.startsWith("Bearer ")) {
     return res.status(401).json({ message: "Unauthorized: No token provided" });
   }
@@ -41,11 +47,15 @@ const verifyToken = (req, res, next) => {
   
   jwt.verify(token, process.env.ACCESS_TOKEN_SECRET, (err, decoded) => {
     if (err) {
+      if (err.name === "TokenExpiredError") {
+        return res.status(401).json({ message: "Token expired. Please login again." });
+      }
       return res.status(403).json({ message: "Forbidden: Invalid token" });
     }
     req.user = decoded;
-    next(); // Proceed to the next middleware
+    next();
   });
+  
 };
 
 
