@@ -8,13 +8,7 @@ const jwt = require('jsonwebtoken');
 const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
 
 // Middleware
-app.use(
-  cors({
-    origin: ["https://bazar-bd.vercel.app/"], // আপনার ক্লায়েন্টের URL
-    methods: ["GET", "POST"],
-    credentials: true,
-  })
-);
+app.use(cors());
 app.use(express.json());
 app.use(bodyParser.json());
 
